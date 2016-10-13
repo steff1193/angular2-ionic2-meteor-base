@@ -2,6 +2,8 @@
 
 This is the available data:
 <ul>
+    <!-- NOT A PROBLEM IF USING A HARDCODED ARRAY WITHOUT ASYNC -->
+    <!--li *ngFor="let item of data" -->
     <li *ngFor="let item of data | async">
         {{item.name}} ({{item.age}})
     </li>

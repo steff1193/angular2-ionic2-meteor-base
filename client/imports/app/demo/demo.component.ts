@@ -13,6 +13,8 @@ import template from './demo.component.html';
 })
 export class DemoComponent implements OnInit {
   greeting: string;
+  // NOT A PROBLEM IF USING A HARDCODED ARRAY WITHOUT ASYNC
+  // data: any[];
   data: Observable<DemoDataObject[]>;
 
   constructor(private demoDataService: DemoDataService) {
@@ -20,6 +22,8 @@ export class DemoComponent implements OnInit {
   }
 
   ngOnInit() {
+    // NOT A PROBLEM IF USING A HARDCODED ARRAY WITHOUT ASYNC
+    // this.data = [{name: "Dotan", age: 25}, {name: "Liran", age: 26}, {name: "Uri", age: 30}];
     this.data = this.demoDataService.getData().zone();
   }
 }
