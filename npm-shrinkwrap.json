@@ -564,11 +564,6 @@
         }
       }
     },
-    "meteor-rxjs": {
-      "version": "0.3.0",
-      "from": "meteor-rxjs@0.3.0",
-      "resolved": "https://registry.npmjs.org/meteor-rxjs/-/meteor-rxjs-0.3.0.tgz"
-    },
     "reflect-metadata": {
       "version": "0.1.8",
       "from": "reflect-metadata@0.1.8",
